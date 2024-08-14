@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo da Pagina</title>
+    <script src="js/funcoes.js"></script>
 </head>
 <body>
     <h1>Primeiro cabeçalho</h1>
@@ -50,7 +51,58 @@
         </thead>
     </table>
 
+    <form action="/cadastro/" method="post">
+        <label for="Login">Login</label>
+        <input type="text" name="Login" id="login" placeholder="Digite seu Login">
+        <br>
 
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Insira sua senha">
+        <br>
 
+        <input type="radio" name="sexo" value="1" checked> Masculino
+        <input type="radio" name="sexo" value="2" checked> Feminino
+        <br>
+
+        <input type="checkbox" name="veiculo1" value="moto">Eu tenho uma moto
+        <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro
+        <br>
+
+        <select name="curso" id="curso">
+            <option value="1">Ciência da Computação</option>
+            <option value="2">Direito</option>
+            <option value="3">Engenharia Eletrica</option>
+            <option value="4">Nutrição</option>
+        </select>
+        <br>
+        
+        Mensagem: <textarea name="message" rows="10" cols="30" id="message"></textarea>
+        <br>
+        de: <input type="number" name="idade" min="0" max="120" step="1" value="30" id="idade">
+        <br>
+        Data Nascimento: <input type="date" name="data_nascimento">
+        
+        Auto complete: <input list="cheeses">
+        <datalist id="cheeses">
+            <option value="1">camembert</option>
+            <option value="1">cheddar</option>
+            <option value="1">cotija</option>
+            <option value="1">minas</option>
+            <option value="1">mussarela</option>
+            <option value="1">parmesão</option>
+            <option value="1">catupiri</option>
+        </datalist>
+        
+        <input type="hidden" name="country" value="Brasil">
+        
+        <input type="reset" value="limpar"> 
+        <input type="submit" value="enviar">
+        <br>
+
+        <button type="button" onclick="alert('Hello World')">Botão 01</button>
+        <button type="button" onclick="soma(5, 10)">Soma</button>
+        
+    </form>
+        
 </body>
 </html>
