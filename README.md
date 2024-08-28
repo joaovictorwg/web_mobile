@@ -68,3 +68,57 @@ framework de software compreende de um conjunto de classes implementadas em uma 
   - Algumas ferramentas gráficas podem ser usadas para gerar o codigo que representa o modelo do banco, como o ORM Pony https://ponyorm.org/ também da linguagem python.
   - A forma como este mapeamento é configurado depende da ferramenta utilizada
 
+# Capitulo III
+- Levantamento de requisitos: propiciar que usuarios e desenvolvedores tenham a mesma compreensão do problema a ser resolvido
+- Análise: construir modelos que determinam qual é o problema apra o qual estamos tentando conceber uma solução de software
+- Projeto: estágio no qual o modelo de análise terá de ser adaptado de tal modo que possa servir como base para implementação alvo.
+- Codificação (implementação): a codigicação do sistmea é efetivamente executada
+- Teste: Consiste na verificação do software. Implantação: entrada em produção do sistema
+### Desenvolvimento agil
+- Agilidade: capacidade de responder adequadamente á mudanças (software, equipe, tecnologias)
+- Adequado para gerenciamento de requisitos e prioridades instaveis (volateis)
+- Projeto e construção são realizados simultaneamente
+- Analise, projeto, implementação e testes não são tão previsiveis (planejamento)
+- O manifesto agil: declaração de principios que fundamentam o desenvolvimento agil de software
+- Ex. metodologias ágeis: Extreme programming (XP) e Scrum.
+#### Extreme Programming
+- CLiente presente: o cliente deve participar ativamente do processo de desenvolvimento, facilitando a comunicação, acompanhando o progesso e sendo informado sobre mudanças
+- Planejamento> o desenvolviemnto utilizando o XP é feito em iterações. Uma iteração é um periodo curto de tempo (1 ou 2 semanas) onde a equipe desenvolve um conjunto de funcionalidades
+- Releases curtos: As liberações de pequenas versões funcionais do projeto auxiliam muito no processo de aceitação por parte do cliente que ja pode testar uma parte do sistema.
+##### Baseada em práticas, como:
+- Stand up meeting: São reuniões feitas em pe e de curta duração, geralmente envolvendo as seguintes perguntas: o que você fez no dia anterior? o que vai fazer hoje? existe algum impedimento? Ainda que apareça algum problema, essa reunião não tem propósito de pensar em soluções.
+- Programações em pares: programação em pares (duplas) em um único computador. Busca-se sempre evolução da equipe melhorando a qualidade do código fonte.
+- Semana de 40 horas: trabalhar com qualidade buscando ter um ritimo de trabalho saudavel, 40 horas por semana, 8 horas por dia
+- Testes constantes: utiliza-se o Desenvolvimento Orientado a Testes (test driven development) o conhecimento TDD
+- Refaração: processo que permite a melhoria continua da programação. Refatorar melhora clareza, leitura do codigo, e facilita manutenção
+- Padronização do código: como todo mundo trabalha no desenvolvimento do mesmo software, a equipe de desenvolvimento precisa estabelecer regras para programar e todos devem seguir essas regras, assim parecerá que o codigo fonte foi digitado pela mesma pessoa
+### Scrum
+- metodologia agil para gestão e planejamento de projeto de software, especialmente de pequeno ou medio porte. Projetos de grande complexidade exigem processos mais complexos (RUP)
+- As funcionalidades a serem implementadas em um projeto são mantidas em uma lista que é conhecida como product backlog
+- no scrum, o escopo do projeto (product backlog) é dividido em ciclos (tipicamente quinzenais ou mensais) chamados de sprints
+- no inicio de cada sprint, faz-se um sprint planning meeting, ou seja, uma reuniçao de planejamento na qual o Product Owner prioriza os itens do Product Backlog Item e a equipe seleciona as atividades que ela sera capaz de implkementar durante o sprint que se inicia 
+- As tarefas alocadas em um sprint são transferidas do product Backlog para o sprint backlog. A cada dia de uma sprint a equipe faz um breve reunião(normalmente pela mannha) chamada daily scrum. O objetivo é disseminar conhecimento
+- Ao final de um sprint, a equipe apresenta as funcionalidades implemnetadas em uma sprint review meeting. Finalment, faz-se uma sprint Retrospective e a equipe parte para o planejamento do proximo sprint, Assim reinicia-se o ciclo
+
+## Django Framework
+- Django é um web framework python de alto nivel, livre e opensource que encoraja o desenvolvomento rapido e limpo e o design programatico
+- construido por desenvolvedores experientes, toma conta de muitos dos aborrecimentos do desenvolvimento web, assim, o desenvolvedor pode manter o foco na implementação da aplicação
+- O django utiliza o principio dru (dont repeat tourself), que permite ao desenvolvedor aproveitas ao maximo o codigo ja feito, evitando repetição
+- utilizado para o desenvolvimento do backend do aplicativo mobile do instagram
+- Django utiliza uma variante (MVT) do padrão arquitetural mvc
+- Model: camada de acesso a dados. Contem toda e qualquer definição acerca dos dados: como acessa-los, como valida-los, seus comportamentos e quais relacionamentos existem entre os mesmo
+- View: a camada intermediaria. Camada que associa modelos a templates. Podem conter rergas de negocios implementadas
+- Template: camada de apresentação. Essa camada contem as decisoes relacionadas a apresentação: como algo deve ser apresentado na pagina web ou outro tipo de documento
+### Principais caracteristicas
+- URls amigaveis: permite a criação de urls de maneira simples e que tenham aparecenia amigavel
+- sistemas de cache: o framework possui um sistema 
+
+## Unified modeling language - UML
+- O desenvolvimento de um software feve seguir algumas etapas para garantinr qualidade, reduzir as chances de erros e facilitar o trabalho dos envolvidos, é preciso elaborar um documentação contendo a estrutura do projeto
+- Isso pode ser feito com a UML, uma linguagem de notação essencial em varias etapas da criação de um produtop de software orientado a objetos, utilizando uma serie de elementos graficos.
+### Diagramas estruturais
+- modelam aspectos estaticos do software, como metodos, interfaces, serviços, arquiteturas, e classes, por exemplo
+- ex: diagrama de classe, diagrama de componentes, diagrama de implantação, diagramas de objetos, diagramas de pacotes, etc
+### DIagramas comportamentais
+- especificam detalhes do comportamento do software, demsontrando o que deve acontecer no sistema
+- ex: diagrama de caso de uso, diagrama de atividades, diagrama de maqiuna de estado, diagrama de sequencia, etc
